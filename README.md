@@ -1,2 +1,2 @@
 # shaweelMacro
-A BSS Macro that works on all both Windows and Linux. 
+A BSS Macro that works on both Windows and Linux. 
