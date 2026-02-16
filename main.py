@@ -1,4 +1,4 @@
-import robloxLauncher, json
+import rdpManager, compatibility, json
 
 DEFAULT_CONFIG = '{"linkCode": 0}'
 
@@ -10,7 +10,8 @@ except FileNotFoundError:
 	CONFIG = json.loads(DEFAULT_CONFIG)
 
 def startMacro():
-	robloxLauncher.terminateAllRobloxInstances()
-	robloxLauncher.joinBeeSwarmSimulator(CONFIG["linkCode"])
+	compatibility.checkSystem()
+	compatibility.checkDependencies()
+	rdpManager.init()
 
 startMacro()

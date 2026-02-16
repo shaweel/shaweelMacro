@@ -10,3 +10,7 @@ def warn(message):
 
 def error(message):
 	print(f"{_colorama.Fore.RED}[ERROR] {_colorama.Fore.RESET}{message}")
+
+def fatal(message):
+	print(f"{_colorama.Fore.RED}[FATAL] {_colorama.Fore.RESET}{message}")
+	exit()
