@@ -1,4 +1,4 @@
-import os, pathlib, importlib.util
+import os, pathlib
 PATH_TO_FILE = pathlib.Path(__file__).parent.resolve()
 
 os.system(f"cd {PATH_TO_FILE}")

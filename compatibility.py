@@ -1,14 +1,14 @@
 import status, sys, os, shutil, subprocess, utils
 
-DEPENDENCY_LIST = ["xrdp", "sudo", "echo", "chpasswd", "chown", "chmod"]
+DEPENDENCY_LIST = ["Xephyr", "openbox", "xterm"]
 OS = sys.platform
 ROOT = os.geteuid() == 0
 
 def checkSystem():
 	if OS != "linux":
 		status.fatal("Incompatible operating system.")
-	if not ROOT:
-		status.fatal("shaweelMacro must be run as root")
+	#if not ROOT:
+	#	status.fatal("shaweelMacro must be run as root")
 	status.info("Your system is compatible with shaweelMacro")
 
 def checkDependencies():

@@ -14,6 +14,8 @@ def alternativeCommands(*commands, solution = None):
 	else:
 		status.fatal(f"None of the following shell commands were found: [], to use shaweelMacro, {solution}")
 
+
+
 def startService(service):
 	init = getInitSystem()
 	if init == "systemd":
@@ -35,7 +37,6 @@ def getInitSystem():
 	except:
 		return None
 	
-	status.info(f"Detected init system: {init}")
 	return init
 
 def getFirstFreeDisplay():

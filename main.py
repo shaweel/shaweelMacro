@@ -1,5 +1,4 @@
-import rdpManager, compatibility, json
-
+import robloxManager, compatibility, json, os, status, atexit
 DEFAULT_CONFIG = '{"linkCode": 0}'
 
 try:
@@ -12,6 +11,15 @@ except FileNotFoundError:
 def startMacro():
 	compatibility.checkSystem()
 	compatibility.checkDependencies()
-	rdpManager.init()
+	xephyrInstance, display = robloxManager.startXephyr()
+	atexit.register(lambda: xephyrInstance.terminate())
+
+	while not robloxManager.getXephyrRunning():
+		pass
+	status.info(f"Xephyr has started at :{display}")
+	robloxManager.runInXephyr("xterm")
+	while robloxManager.getXephyrRunning():
+    		pass
+
 
 startMacro()
