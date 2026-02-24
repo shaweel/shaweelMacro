@@ -1,0 +1,37 @@
+QWidget {
+    background-color: #050505;
+    color: #ffffff;
+}
+
+QLabel {
+    color: #ffffff;
+}
+
+QComboBox {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background: #185fb4;
+    color: #ffffff;
+}
+
+QListWidget {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+QListWidget::item:selected {
+    background-color: #185fb4;
+    color: #ffffff;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background-color: #202020;
+}
