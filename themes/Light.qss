@@ -1,45 +1,110 @@
 QWidget {
-    background-color: #f5f5f5;
-    color: #2e2e2e;
+	background-color: #f5f5f5;
+	color: #000000;
 }
 
 QLabel {
-    color: #2e2e2e;
+	color: #000000;
 }
 
 QComboBox {
-    background-color: #ffffff;
-    color: #2e2e2e;
+	background-color: #ffffff;
+	color: #000000;
+	padding-left: 3px;
+	border: 1px solid #cccccc;
+	combobox-popup: 0;
+}
+
+QComboBox:on {
+	border: 1px solid #ffffff;
+}
+
+QComboBox::drop-down {
+	width: 25px;
+	border: none;
+}
+
+QComboBox::down-arrow {
+	image: url(:/assets/blackDropdown.png);
+	width: 12px;
+	height: 12px;
 }
 
 QComboBox QAbstractItemView {
-    background-color: #ffffff;
-    color: #2e2e2e;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	color: #000000;
+	outline: 0px;
 }
 
-QListWidget {
-    background-color: #ffffff;
-    color: #2e2e2e;
+QComboBox QAbstractItemView::item {
+	background-color: #ffffff;
+	padding-top: 1px;
+    padding-bottom: 3px;
 }
 
-QListWidget::item:selected {
-    background: #a0c4ff;
-    color: #000000;
+QComboBox QAbstractItemView::item:hover {
+	background-color: #4790e0;
+}
+
+QComboBox QAbstractItemView::item:selected {
+	background-color: #4790e0;
 }
 
 QScrollBar:vertical, QScrollBar:horizontal {
-    background-color: #e0e0e0;
+	background-color: #f0f0f0;
 }
 
-QScrollBar::handle {
-    background-color: #b0b0b0;
-    border-radius: 4px;
+QListWidget {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #cccccc;
+	outline: 0px;
+	padding: 0px;
 }
 
-QScrollBar::handle:hover {
-    background-color: #909090;
+QListWidget::item {
+	background-color: #ffffff;
+	padding-top: 1px;
+	padding-bottom: 3px;
 }
 
-QScrollBar::add-line, QScrollBar::sub-line {
-    background: none;
+QListWidget::item:hover {
+	background-color: #4d4790e0;
+}
+
+QListWidget::item:selected {
+	background-color: #4790e0;
+}
+
+QListWidget::item:selected:!active {
+	background-color: #4790e0;
+}
+
+QPushButton {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #cccccc;
+	padding: 2px 5px;
+}
+
+QPushButton:hover {
+	background-color: #f3f3f3;
+	border: 1px solid #c0c0c0;
+}
+
+QPushButton:pressed {
+	background-color: #eaeaea;
+	border: 1px solid #b0b0b0;
+}
+
+QPushButton:disabled {
+	background-color: #f5f5f5;
+	color: #666666;
+	border: 1px solid #ffffff;
+}
+
+QTextEdit {
+	background-color: #f5f5f5;
+	color: #000000;
 }

@@ -1,37 +1,110 @@
 QWidget {
-    background-color: #050505;
-    color: #ffffff;
+	background-color: #050505;
+	color: #ffffff;
 }
 
 QLabel {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 QComboBox {
-    background-color: #202020;
-    color: #ffffff;
+	background-color: #191919;
+	color: #ffffff;
+	padding-left: 3px;
+	border: 1px solid #2c2c2c;
+	combobox-popup: 0;
+}
+
+QComboBox:on {
+	border: 1px solid #191919;
+}
+
+QComboBox::drop-down {
+	width: 25px;
+	border: none;
+}
+
+QComboBox::down-arrow {
+	image: url(:/assets/whiteDropdown.png);
+	width: 12px;
+	height: 12px;
 }
 
 QComboBox QAbstractItemView {
-    background-color: #202020;
-    color: #ffffff;
+	border: 1px solid #2c2c2c;
+	background-color: #191919;
+	color: #ffffff;
+	outline: 0px
+}
+
+QComboBox QAbstractItemView::item {
+	background-color: #191919;
+	padding-top: 1px;
+    	padding-bottom: 3px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+	background-color: #0f4290;
 }
 
 QComboBox QAbstractItemView::item:selected {
-    background: #185fb4;
-    color: #ffffff;
-}
-
-QListWidget {
-    background-color: #202020;
-    color: #ffffff;
-}
-
-QListWidget::item:selected {
-    background-color: #185fb4;
-    color: #ffffff;
+	background-color: #0f4290;
 }
 
 QScrollBar:vertical, QScrollBar:horizontal {
-    background-color: #202020;
+	background-color: #191919;
+}
+
+QListWidget {
+	background-color: #191919;
+	color: #ffffff;
+	border: 1px solid #2c2c2c;
+	outline: 0px;
+	padding: 0px;
+}
+
+QListWidget::item {
+	background-color: #191919;
+	padding-top: 1px;
+	padding-bottom: 3px;
+}
+
+QListWidget::item:hover {
+	background-color: #4d0f4290;
+}
+
+QListWidget::item:selected {
+	background-color: #0f4290;
+}
+
+QListWidget::item:selected:!active {
+	background-color: #0f4290;
+}
+
+QPushButton {
+	background-color: #191919;
+	color: #ffffff;
+	border: 1px solid #2c2c2c;
+	padding: 2px 5px;
+}
+
+QPushButton:hover {
+	background-color: #272727;
+	border: 1px solid #2e2e2e;
+}
+
+QPushButton:pressed {
+	background-color: #2e2e2e;
+	border: 1px solid #3e3e3e;
+}
+
+QPushButton:disabled {
+	background-color: #050505;
+	color: #555555;
+	border: 1px solid #191919;
+}
+
+QTextEdit {
+	background-color: #191919;
+	color: #ffffff;
 }

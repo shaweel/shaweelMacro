@@ -1,4 +1,4 @@
-import status, sys, os, shutil, pathlib
+import lib.status as status, sys, os, shutil, pathlib
 
 DEPENDENCY_LIST = ["xrdp", "pkill", "pkexec", "xfreerdp3", "chpasswd"]
 OS = sys.platform
@@ -12,15 +12,16 @@ def checkSystem():
 		status.fatal("shaweelMacro must be run as root")
 	status.success("Your system is compatible with shaweelMacro")
 def checkDependencies():
-	missingDependencies = False
+	missingDependencies = []
 	for dependency in DEPENDENCY_LIST:
 		if shutil.which(dependency): continue
 		status.error(f"Missing system dependency: {dependency}")
-		missingDependencies = True
-	if not missingDependencies: 
+		missingDependencies.append(dependency)
+	if missingDependencies == []: 
 		status.success("Your system has all the dependencies needed to run shaweelMacro")
 		return
-	status.fatal("There are system dependencies that are missing, you must install all of them before being able to use shaweelMacro")
+	status.fatal(f"""There are system dependencies that are missing, you must install all of them before being able to use shaweelMacro
+Missing system dependencies: {", ".join(missingDependencies)}""")
 
 def fullCheck():
 	checkSystem()
