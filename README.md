@@ -2,7 +2,7 @@
 # Development resumed
 Well, that was anticlimactic.
 
-I will continue to work this now. This time using C++ instead of Python and Dear [ImGui](https://github.com/ocornut/imgui) instead of [Qt6](https://www.qt.io/) as I think it better fits this project.
+I will continue to work this now. This time using C++ instead of Python and [Dear ImGui](https://github.com/ocornut/imgui) instead of [Qt6](https://www.qt.io/) as I think it better fits this project.
 
 I have also found a very easy way to achieve an isolated [Xorg](https://en.wikipedia.org/wiki/X_Window_System) environment, instead of using [xrdp](https://github.com/neutrinolabs/xrdp), I will now be using [gamescope](https://github.com/ValveSoftware/gamescope)
 
