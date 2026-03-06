@@ -1,6 +1,6 @@
 ##### March 6th 2026 №2
 # Java
-I'm going to use [Java](https://www.java.com), because for this project, the language basically doesn't matter and I need to practice Java for another project of mine.
+I'm going to use [Java](https://www.java.com), because for this project, the language basically doesn't matter and I need to practice [Java](https://www.java.com) for another project of mine.
 
 ##### March 6th 2026 №1
 # Returning to Qt
