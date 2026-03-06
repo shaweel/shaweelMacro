@@ -1,3 +1,7 @@
+##### March 6th 2026
+# Returning to Qt
+I'm going to continue using [Qt6](https://www.qt.io), as other options seem to be way worse or less mature. I'm still going to be using [C++](https://isocpp.org).
+
 ##### March 5th 2026
 # Development resumed
 Well, that was anticlimactic.
@@ -18,6 +22,6 @@ This is also why I'm for now quitting [Bee Swarm Simulator](https://www.roblox.c
 
 For now, I will be returning to [Hypixel Skyblock](https://hypixel.net/) and working on [shaweelAddons-v2](https://github.com/shaweel/shaweelAddons-v2).
 
-If there is anyone, who feels like the idea of this project is interesting—embedding [xrdp](https://github.com/neutrinolabs/xrdp) inside the application to attempt a seamless experience—feel free to [fork](https://en.wikipedia.org/wiki/Fork_(software_development)) this project and continue development on your own. If anything I encourage doing so, since in my opinion, anything that will make [Linux](https://www.linux.org) more accessible to anyone, is a good thing, no matter how small, including finishing such [Linux-centric](https://www.linux.org) [Bee Swarm Simulator](https://www.roblox.com/games/1537690962) macro, as I know that there are definitely at least a few people, that are on [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) for that reason alone.
+If there is anyone, who feels like the idea of this project is interesting—embedding [xrdp](https://github.com/neutrinolabs/xrdp) inside the application to attempt a seamless experience—feel free to [fork](https://en.wikipedia.org/wiki/Fork_(software_development)) this project and continue development on your own. If anything I encourage doing so, since in my opinion, anything that will make [Linux](https://www.kernel.org) more accessible to anyone, is a good thing, no matter how small, including finishing such [Linux-centric](https://www.kernel.org) [Bee Swarm Simulator](https://www.roblox.com/games/1537690962) macro, as I know that there are definitely at least a few people, that are on [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) for that reason alone.
 
 I don't know if I'll ever return to this project. Have a nice day.
