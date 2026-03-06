@@ -1,4 +1,7 @@
-##### March 6th 2026
+##### March 6th 2026 №2
+I'm going to use [Java](https://www.java.com), because for this project, the language basically doesn't matter and I need to practice Java for another project of mine.
+
+##### March 6th 2026 №1
 # Returning to Qt
 I'm going to continue using [Qt6](https://www.qt.io), as other options seem to be way worse or less mature. I'm still going to be using [C++](https://isocpp.org).
 
